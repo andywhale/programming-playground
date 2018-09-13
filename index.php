@@ -4,9 +4,9 @@ require_once('utility/autoloader/autoloader.php');
 
 $numberOfItems = 1000;
 
-$sortAlgorithms = ['bubble'];
+$sortAlgorithms = ['bubble', 'merge'];
 
-foreach ([100,1000,2000,3000] as $numberOfItems) { 
+foreach ([10,100,1000,2000] as $numberOfItems) { 
   $items = \utility\numbers\randomNumbers::getRandomIntegerArray($numberOfItems);
   echo "<ul>";
   foreach ($sortAlgorithms as $sort) {
